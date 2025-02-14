@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine? 💖</title>
+
+    <!-- Bootstrap for Styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+    <div class="container text-center">
+        <h1 class="valentine-title">Will You Be My Valentine? 💕</h1>
+        <img src="resume2.png" alt="Valentine Image" class="valentine-img">
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="btn btn-success btn-lg" onclick="showLove()">Yes 💖</button>
+            <button id="no-btn" class="btn btn-danger btn-lg" onmouseover="moveNo()">No 💔</button>
+        </div>
+
+        <!-- Sweet Message After Saying "Yes" -->
+        <p id="love-message" class="hidden">Yay! 💕 I'll see you later! 🌹</p>
+
+        <!-- Hidden MP3 Music Player (Will Play When "Yes" is Clicked) -->
+        <audio id="love-song" preload="auto">
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- JavaScript for Interaction -->
+    <script src="resume.js" defer></script>
+
+</body>
+</html>
